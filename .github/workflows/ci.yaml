@@ -77,7 +77,7 @@ jobs:
     
     - name: update in the helm chart
       run: |
-        sed -i 's/tag .*/tag: "${{github.run_id}}"/' helm/go-web-app-chart/values.yaml
+        sed -i 's/tag: .*/tag: "${{github.run_id}}"/' helm/go-web-app-chart/values.yaml
     
     - name: Commit and Push changes
       run: |
