@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: drajj.com
+  - host: go.drajj.com
     http:
       paths:
       - path: /
