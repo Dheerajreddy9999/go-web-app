@@ -4,8 +4,9 @@ metadata:
   name: go-web-app
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: production
 spec:
-  ingressClassName: nginx
+  ingressClassName: external-nginx
   rules:
   - host: go.drajj.com
     http:
@@ -17,3 +18,7 @@ spec:
             name: go-app
             port:
               number: 80
+  tls:
+    - hosts:
+        - go.drajj.com
+      secretName: go-drajj-com

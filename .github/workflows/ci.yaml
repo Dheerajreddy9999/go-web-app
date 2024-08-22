@@ -7,6 +7,7 @@ on:
    paths-ignore:
      - 'helm/**'
      - 'README.md'
+     - 'argocd/**'
     
 jobs:
   build:
