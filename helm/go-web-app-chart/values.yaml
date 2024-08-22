@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: dheerajlearningdocker/go-webapp
   pullPolicy: IfNotPresent
-  tag: "10505558397"
+  tag: "10509784011"
 
 imagePullSecrets: []
 nameOverride: ""
